@@ -1,0 +1,16 @@
+*,*::after,*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6,a,span,p{
+    color: #fff;
+}
+
+body{
+    background-color: #141414;
+}
+

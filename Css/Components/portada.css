@@ -1,0 +1,94 @@
+.fondo video{
+    width: 100%;
+    height: 45%;
+}
+
+/* .fondo img{
+    
+} */
+
+.fondo .Cyberpunk-logo{
+    position: absolute;
+    margin-left: -78rem;
+    margin-top: 9rem;
+    width: 30rem;
+}
+
+.fondo .descripción{
+    position: absolute;
+    margin-top: -24rem;
+    width: 28rem;
+    margin-left: 3.5rem;
+    font-weight: 500;
+}
+
+.botones{
+    display: flex;
+    gap: 1.1rem;
+    position: absolute;
+    margin-top: -19rem;
+    margin-left: 3.5rem;
+}
+
+.botones .reproducir, .botones .Mas-información{
+    padding: .3rem 2rem;
+    border-radius: 5px;
+    border: none;
+}
+
+.botones a{
+    color: black;
+}
+
+.botones .reproducir {
+    background-color: #fff;
+}
+
+.botones .Mas-información .Info{
+    font-weight: 600;
+    font-size: 17px;
+    color: #fff;
+}
+
+.botones .Mas-información{
+    background-color: rgba(126,119,108, 0.77);
+}
+
+.Mas-información:hover{
+    background-color: rgba(126,119,108, 0.5);
+}
+
+.reproducir:hover{
+    background-color: rgb(163,163,163);
+}
+
+.botones .reproducir {
+    width: 10em;
+}
+
+.botones .Mas-información {
+    width: 12em;
+}
+
+.botones .reproducir a,
+.botones .Mas-información a {
+    margin-left: .5em;
+    position: absolute;
+    margin-top: 1px;
+    font-weight: 700;
+}
+
+.Mas-información .Info{
+    color: #fff;
+}
+
+.botones .reproducir svg,
+.botones .Mas-información svg {
+    margin-left: -1em;
+}
+
+.botones .bocina .bocinita{
+    margin-left: 45rem;
+    position: absolute;
+    margin-top: 4px;
+}

@@ -1,0 +1,67 @@
+.selección-especial{
+    display: flex;
+    overflow-x: hidden;
+    padding-bottom: 1em;
+}
+
+.selección-especial .Seleccion{
+   width: 250px;
+   border-radius: 2%;
+   margin-left: 2.5rem;
+   margin-right: -2rem;
+}
+
+.continuar-viendo{
+    display: flex;
+    margin-left: 2.5rem;
+}
+
+.continuar-viendo img{
+    width: 250px;
+    border-radius: 2%;
+}
+
+h4 {
+    margin-left: 2.5em;
+    padding-bottom: 1.3em;
+    padding-top: 1em;
+    font-size: 18px;
+    color: #e5e5e5;
+}
+
+h4:hover{
+    color: #ffffff;
+}
+
+.selección-especial {
+    display: flex;
+}
+
+.selección-especial svg {
+    width: 7em;
+    height: 7em;
+}
+
+.selección-especial img {
+    width: 250px;
+}
+
+.botones #muteButton .bocinita {
+    margin-left: 45rem;
+    margin-top: 7px;
+}
+
+.selección-especial .top {
+    display: flex;
+}
+
+.selección-especial .top img {
+    width: 7em;
+    margin-left: -1em;
+}
+
+.selección-especial .top svg {
+    width: 7em;
+    height: 8.8em;
+    margin-top: 1em;
+}

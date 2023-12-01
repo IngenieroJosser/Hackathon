@@ -1,0 +1,6 @@
+@import './settings/Base.css';
+@import './Components/header.css';
+@import './Components/portada.css';
+@import './Components/peliculas.css';
+@import './Components/footer.css';
+@import './Components/carrusel.css';
