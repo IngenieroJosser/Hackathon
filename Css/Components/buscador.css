@@ -14,7 +14,7 @@ input {
 	background-color: #000;
 	border-radius: 50px;
 	font-size: 20px;
-	border: 1px solid #D50000;
+	border: 1px solid #4348BD;
 	transition: all .7s ease;
 }
 
@@ -46,4 +46,10 @@ input {
     margin-top: 12px;
     margin-left: -.5em;
     margin-left: -10px;
+}
+
+header .logo {
+	width: 10em;
+	margin-left: -1em;
+	margin-top: -.8em;
 }
