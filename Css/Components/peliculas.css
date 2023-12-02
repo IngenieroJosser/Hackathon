@@ -4,12 +4,7 @@
     padding-bottom: 1em;
 }
 
-.selección-especial .Seleccion{
-   width: 250px;
-   border-radius: 2%;
-   margin-left: 2.5rem;
-   margin-right: -2rem;
-}
+
 
 .continuar-viendo{
     display: flex;
@@ -35,6 +30,14 @@ h4:hover{
 
 .selección-especial {
     display: flex;
+    line-height: 34px;
+    overflow-x: hidden;
+    padding-bottom: 1em;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-around;
+    align-content: space-around;
 }
 
 .selección-especial svg {
@@ -43,8 +46,9 @@ h4:hover{
 }
 
 .selección-especial img {
-    width: 250px;
+    width: max-content;
 }
+
 
 .botones #muteButton .bocinita {
     margin-left: 45rem;
