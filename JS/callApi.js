@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
                 // Añade el título y el póster al elemento
                 resultElement.innerHTML = `
-                    <a href='#'><p><strong>Título:</strong> ${movie.Title}</p>
+                    <a href='pelicula.html?imdbID=${movie.imdbID}'><p><strong>Título:</strong> ${movie.Title}</p>
                     <img src="${movie.Poster}" alt="${movie.Title} Poster"></a>
                 `;
 
@@ -55,6 +55,7 @@ document.addEventListener('DOMContentLoaded', function () {
         } else {
             seleccionEspecialContainer.textContent = 'No se encontraron resultados';
         }
+        
     }
 
     // Obtén la referencia al elemento de entrada
