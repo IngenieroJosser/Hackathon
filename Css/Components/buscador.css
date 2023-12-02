@@ -8,9 +8,10 @@ input {
 	outline: none;
 	box-sizing: border-box;
 	height: px;
-	width: 0px;
+	width: 300px;
 	padding: 0 20px;
-	color: #000;
+	color: #fff;
+	background-color: #000;
 	border-radius: 50px;
 	font-size: 20px;
 	border: 1px solid #D50000;
@@ -26,9 +27,7 @@ input {
 	right: 0px;
 	top: 0px;
 	width: 45px;
-	height: 45px;
-	background: #D50000;
-	line-height: 80px;
+	line-height: 8 0px;
 	border-radius: 50%;
 	text-align: center;
 	cursor: pointer;
@@ -40,18 +39,6 @@ input {
 	color: white;
 	line-height: 80px;
 	transition: all .7s ease;
-}
-
-.container:hover input {
-	width: 350px;
-}
-
-.container:hover{
-	transform: rotate(-360deg);
-}
-
-.btn:hover{
-	background: #cc0000;
 }
 
 .container .btn svg {
