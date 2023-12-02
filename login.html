@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://sqasa.co/wp-content/uploads/2021/07/cropped-Favicon-32x32.png" sizes="32x32">
+    <link rel="icon" href="https://sqasa.co/wp-content/uploads/2021/07/cropped-Favicon-192x192.png" sizes="192x192">
+    <title>Chris - Inicia sesión</title>
+    <link rel="stylesheet" href="css/login.css">
+</head>
+
+<body>
+    <div class="box">
+        <span class="borderLine"></span>
+        <form action="http://localhost:3000/" method="POST">
+            <h2>Inicio Sesion</h2>
+                <div class="inputBox">
+                    <input type="email" name="user" id="email" required="required" autocomplete="current-password">
+                    <span>Usuario</span>
+                    <i></i>
+                </div>
+                <div class="inputBox">
+                    <input type="password" name="password" id="password" required="required" autocomplete="current-password">
+                    <span>Contraseña</span>
+                    <i></i>
+                </div>
+                <input type="submit" value="Ingresar">
+        </form>
+    </div>
+    <script type="module" src="js/auth.js"></script>
+    <script src="https://alcdn.msftauth.net/browser/2.21.0/js/msal-browser.min.js"></script>
+
+
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <% if(alert) { %>
+        <script>
+            Swal.fire({
+                title: '<%= alertTitle %>',
+                text: '<%= alertMessage %>',
+                icon: '<%= alertIcon %>',
+                showConfirmButton: <%= showConfirmButton %>,
+                timer: <%= timer %>
+                }).then(() => {
+                    window.location = '/<%= ruta %>'
+                })
+        </script>
+        <% } %>
+</body>
+
+</html>
