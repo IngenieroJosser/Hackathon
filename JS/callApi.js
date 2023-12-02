@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         console.log(searchTerm);
         if (!searchTerm) {
-            console.log('Ingrese un término de búsqueda');
+            window.location.href = "index.html";
             return;
         }
 
@@ -55,8 +55,60 @@ document.addEventListener('DOMContentLoaded', function () {
         } else {
             seleccionEspecialContainer.textContent = 'No se encontraron resultados';
         }
-        
+
     }
+
+    function buildCarousel(title, items) {
+        const carruselContainer = document.createElement('div');
+        carruselContainer.classList.add('carrusel-container');
+
+
+        // Crea el contenedor de diapositivas
+        const slideContainer = document.createElement('div');
+        slideContainer.classList.add('carrusel-slide');
+
+        // Añade las imágenes al carrusel
+        items.forEach(item => {
+            const anchorElement = document.createElement('a');
+            anchorElement.href = `pelicula.html?imdbID=${item.imdbID}`;
+            const imgElement = document.createElement('img');
+            imgElement.classList.add('Seleccion');
+            imgElement.src = item.Poster;
+            imgElement.alt = item.Title;
+            anchorElement.appendChild(imgElement);
+            slideContainer.appendChild(anchorElement);
+        });
+
+        // Añade el contenedor de diapositivas al carrusel
+        carruselContainer.appendChild(slideContainer);
+
+        // Añade el carrusel al documento
+        document.querySelector('.carrusel').appendChild(carruselContainer);
+    }
+
+    function crearCarrusel(pelicula) {
+
+        // Realiza una solicitud adicional a la API para obtener información detallada de la película
+        const apiUrlForMovie = `${apiUrl}?s=${pelicula}&apikey=${apiKey}`;
+
+        console.log(apiUrlForMovie);
+        fetch(apiUrlForMovie)
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                return response.json();
+            })
+            .then(data => {
+                console.log(data.Search);
+                mostrarSeleccionEspecial(data.Search);
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            });
+    }
+
+    crearCarrusel("Batman");
 
     // Obtén la referencia al elemento de entrada
     const searchInput = document.getElementById('searchInput');

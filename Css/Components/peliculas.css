@@ -69,3 +69,13 @@ h4:hover{
     height: 8.8em;
     margin-top: 1em;
 }
+
+.seleccion-especial-result {
+    width: 200px; /* Puedes ajustar el valor según tus necesidades */
+    margin: 10px; /* Agrega márgenes según sea necesario */
+}
+
+.seleccion-especial-result img {
+    width: 100%; /* Ajusta la imagen para que ocupe el 100% del contenedor */
+    border-radius: 2%; /* Mantén el redondeo de las esquinas si lo deseas */
+}
